@@ -9,8 +9,11 @@
   - *Bash*: `kubectl get nodes`
   - the details of the worker nodes will be displayed with status ***Ready***:
 ```
+control@master-VirtualBox:~/terraform-lab/acg_tera_k8s$ kubectl get nodes
 NAME                                STATUS   ROLES   AGE   VERSION
 aks-agentpool-22057413-vmss000000   Ready    agent   21m   v1.21.9
 aks-agentpool-22057413-vmss000001   Ready    agent   21m   v1.21.9
 aks-agentpool-22057413-vmss000002   Ready    agent   21m   v1.21.9
 ```
+5. Through the Azure portal, health metrics for both the cluster nodes and pods can be monitored.
+6. Perform `terraform destroy` if the resources are not required anymore.

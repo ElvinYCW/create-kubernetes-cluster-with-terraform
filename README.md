@@ -1,5 +1,5 @@
 ### create-kubernetes-cluster-with-terraform
-1. This attempt was carried out in a Azure sandbox environment provided by ACG.
+1. This attempt was carried out in an Azure sandbox environment provided by ACG.
 2. The Resource Group was pre-assigned with the name 1-77437418-playground-sandbox.
 3. There is no requirement for service principal credentials. However, the service principal credential can be manually created with `az ad sp create-for-rbac --name myAKSClusterServicePrincipal` in the Azure CLI and then `export TF_VAR_client_id=<service-principal-appid>`, `export TF_VAR_client_secret=<service-principal-password>`.
 4. The Kubernetes tools can be used to verify the newly created cluster:
